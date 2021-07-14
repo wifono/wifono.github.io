@@ -1,0 +1,289 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.container:before,
+.group:before,
+.menu:before,
+.container:after,
+.group:after,
+.menu:after
+{
+    content: " ";
+    display: table;
+}
+.container::after,
+.group:after,
+.menu:after {
+    clear:both;
+}
+
+
+body {
+    background: rgb(0,139,164);
+    background: -moz-linear-gradient(180deg, rgba(0,139,164,0.06206232492997199) 0%, rgba(232,232,232,0.8491771708683473) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,139,164,0.06206232492997199) 0%, rgba(232,232,232,0.8491771708683473) 100%);
+    background: linear-gradient(180deg, rgba(0,139,164,0.06206232492997199) 0%, rgba(232,232,232,0.8491771708683473) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#008ba4",endColorstr="#e8e8e8",GradientType=1);;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 100%;
+    -webkit-font-smoothing:antialiased;
+    margin: 0;
+}
+
+.container {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 1.25em; /* 20 / 16 */
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+}
+
+.background img {
+    position: fixed;
+    margin-left: 75em;
+    margin-top: -34.375em;
+    opacity: 40%;
+    opacity: 0;
+    transition: opacity .5s .30s ease-out;
+    will-change: opacity;
+   
+}
+
+.background img.is-visible {
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none
+}
+
+/* HEADER */
+
+.logo {
+    background: url(../FRNNT-copy/img/Freonnet-logo3.png) no-repeat;
+    width: 100%;
+    height: 205px;
+    display: block;
+    text-indent: -9999px;
+    margin: 1.25em 0;
+    position: relative;
+    z-index: 2;
+    margin-top: 11.875em;
+    opacity: 0;
+    transition: opacity .4s .60s ease-out;
+    will-change: opacity;
+    -webkit-transition: opacity .4s .60s ease-out;
+    -moz-transition: opacity .4s .60s ease-out;
+    -ms-transition: opacity .4s .60s ease-out;
+    -o-transition: opacity .4s .60s ease-out;
+}
+
+.logo.is-visible {
+    opacity: 1;
+}
+
+nav {
+    background: rgba(49, 49, 49, 0.604);
+    position: relative;
+    z-index: 0;
+    border-bottom: rgba(99, 200, 255, 0.241) solid .2em;
+}
+
+.navigation {
+    margin:0;
+    white-space: nowrap;
+    width: 60%;
+    
+}
+
+.navigation li {
+    display: inline-block;
+    width: 18.75984251968504%;
+    padding: 0.5em 0;
+    margin: .32em 0;
+    margin-right: 10%;
+    font-size: 1.5625em;
+
+}
+
+.navigation a {
+    color: rgb(238, 238, 238);
+    width: 0.1931247585940518em;
+    padding: .3em;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+.navigation a:hover {
+    background: rgb(116, 116, 116);
+    border-radius: .2em;
+}
+
+.active a {
+    color: rgb(0, 174, 255);
+}
+
+/* ARTICLE */
+
+.content {
+    font-size: 1.875em;
+    padding-bottom: 1.875em;
+    margin: 1em 0;
+
+
+    
+
+
+
+    opacity: 1;
+    transition: opacity .5s .30s ease-out;
+    will-change: opacity;
+    -webkit-transition: opacity .5s .30s ease-out;
+    -moz-transition: opacity .5s .30s ease-out;
+    -ms-transition: opacity .5s .30s ease-out;
+    -o-transition: opacity .5s .30s ease-out;
+}
+
+.content.is-visible {
+    opacity: 1;
+    }
+
+.content h1 {
+    text-align: left;
+    text-transform: uppercase;
+    margin: 0;
+    margin-left: 1.5em;
+    color: rgb(73, 73, 73);
+}
+
+.content p {
+    line-height: 2em;
+    text-align:justify;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(196,196,196,0.11248249299719892) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(196,196,196,0.11248249299719892) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(196,196,196,0.11248249299719892) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#c4c4c4",GradientType=1);    padding: 2.5em 2.5em;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-top: 0;
+}
+
+/* FOOTER */
+
+.footer  {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer a {
+    background: url(../FRNNT-copy/img/Freonnet-logo3-mini.png) no-repeat;
+    max-width: 18.75em;
+    height: 4.6875em;
+    display: block;
+    text-indent: -99999px;
+    margin: 0 auto;
+}
+
+.footer p {
+    text-align: center;
+}
+
+/* IMAGES */
+.miniIcon {
+    max-width: 1.5em;
+    margin: 1.5em  0  1em 0;
+    padding: 0;
+     margin-bottom: -1.8em;
+     margin-left: .5em;
+
+}
+
+
+.security h1 {
+    margin-top: -.2em;
+}
+
+
+.elLogo {
+    max-width: 1em;
+    margin-top: -.5em;
+}
+
+.secLogo {
+        margin-top: 50px;
+}
+
+.ntbLogo {
+    margin-top: 0;
+}
+
+
+
+
+
+
+/* M QUERIES */
+
+@media screen and (max-width:880px) {
+
+    .logo {
+        background: url(../FRNNT-copy/img/Freonnet-logo3-mini.png) no-repeat;
+        margin: 1em 0;
+        max-width: 100%;
+        height: 4.7em;
+    }
+
+    .navigation li {
+        margin-right: 25%;
+    } 
+}
+
+    @media screen and (max-width:680px) {
+
+        .content p {
+            text-align: center;
+            padding: 0 1em;
+        }
+        
+        article {
+            font-size: 85%;
+        } 
+        
+        
+  
+        }
+    
+@media screen and (max-width:500px) {
+
+    .navigation a {
+        font-size: 90%;
+    }
+
+    .navigation li:first-child {
+        margin-left: -1em;
+    }
+  .logo {
+        padding:0;
+        margin: 0;
+    }
+   
+
+    .content h1 {
+        padding-top: .02em;
+    }
+    }
