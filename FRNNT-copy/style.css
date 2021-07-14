@@ -243,7 +243,7 @@ nav {
 
     .logo {
         background: url(../FRNNT-copy/img/Freonnet-logo3-mini.png) no-repeat;
-        margin: 1em 0;
+        
         max-width: 100%;
         height: 4.7em;
     }
@@ -279,11 +279,12 @@ nav {
     }
   .logo {
         padding:0;
-        margin: 0;
     }
    
 
     .content h1 {
         padding-top: .02em;
+        text-align: center;
+        margin-left:-7px;
     }
     }
