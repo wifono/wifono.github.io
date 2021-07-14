@@ -279,7 +279,14 @@ nav {
     }
   .logo {
         padding:0;
+      margin-bottom: 0;
+      margin-top: 2em;
+      
     }
+    
+   .container {
+       margin-top: 0;
+       
    
 
     .content h1 {
